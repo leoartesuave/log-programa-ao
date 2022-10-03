@@ -1,0 +1,27 @@
+<script>
+    //função que não recebe parâmetro e não recebe valor
+    function somar(){
+        document.write(2 + 2 + '<br>');
+    }
+
+    //Função que RECEBE parâmetro e não retorna valor
+    function somarvalores(valor1, valor2){
+        document.write(valor1 + valor2 + '<br>');
+    }
+
+    //Função que RECEBE parâmetro e RETORNA valor
+    function subtrair(valor1, valor2){
+        var resultado;
+
+        resultado = valor1 - valor2;
+
+        return resultado;
+    }
+
+    somar();
+    somarvalores(5, 7);
+    somarvalores(8, 17);
+    x = subtrair(6, 3);
+    document.write(x + '<br>');
+    document.write(subtrair(8, 9));
+</script>

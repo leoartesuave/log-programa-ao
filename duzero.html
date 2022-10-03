@@ -1,0 +1,36 @@
+<script>
+    var nuns = new Array(6);
+    var sorteio;
+
+    function sortear() {
+        return Math.floor((Math.random() * 59) + 1);
+    }
+
+
+    for (i = 0; i < 6; i++) {
+        sorteio = sortear();
+        if (nuns.indexOf(sorteio) >= 0) {
+            i--;
+
+
+        } else {
+            nuns[i] = sorteio;
+        }
+
+
+    }
+
+    document.write('Seus numeros sao: ' + '<br><br>');
+    document.write(nuns.sort(function (a, b) { return a - b }) + '<br><br>');
+    document.write(nuns.reverse(function (a, b) { return a - b }) + '<br>');
+
+
+
+
+    /*
+    for(i = 0; i < nuns.length; i++){
+        nuns[i] = Math.floor((Math.random() * 59) + 1);
+        document.write('os numeros sao: ' + nuns[i] + '<br>');
+    }
+    */
+</script>

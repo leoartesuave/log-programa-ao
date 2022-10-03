@@ -1,0 +1,40 @@
+@charset "utf-8";
+body{margin:0;}
+
+.caixa1 {
+    width: 100px;
+    height: 100px;
+    margin:auto;
+    border:solid 5px blue;
+    background: white;
+}
+
+.caixa2 {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    border:solid 5px blue;
+    padding: 10px;
+    box-sizing:border-box;
+    background:coral;
+
+    
+}
+
+#caixa3 {
+width: 100px;
+height: auto;
+margin: auto;
+border: solid 2px black;
+padding: auto;
+background: white;
+}
+
+#caixa4 {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    border: solid 2px black;
+    padding: auto;
+    background: white;
+    }

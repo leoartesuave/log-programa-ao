@@ -1,0 +1,25 @@
+<script>
+var A = '';
+var B = '';
+var C = '';
+
+
+do {
+    A= prompt('digite o valor de A:');
+    B= prompt('digite o valor de B:');
+    C= prompt('digite o valor de C:');
+} while (A == null || A == '');
+while (B == null || B == '');
+while (C == null || C == '');
+
+for (i=0;i<1;i++){
+    R = A^2 + B^2;
+    S = B^2 + C^2;
+    D = R + S / 2;
+    
+     document.write('O valor eh:' + D + '</br>');
+}
+
+
+
+</script>

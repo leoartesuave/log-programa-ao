@@ -1,0 +1,62 @@
+<script>
+    var c1 = 0
+    var c2 = 0;
+    var c3 = 0;
+    var c4 = 0;
+    var c5 = 0;
+    var voto;
+    var resposta;
+
+    do {voto = prompt('17 - Bo\n13 - lu\n12 - ciro\n0 - branco\n-1 - nulo');
+
+    switch(true){
+       
+        case voto == '17':
+        c1++;
+        break;
+        
+        case voto == '13':
+            c2++;
+            break;
+           
+            case voto == '12':
+            c3++;
+            break;
+
+            case voto == '0':
+                c4++;
+                break;
+
+                case voto == '-1':
+                    c5++;
+                    break;
+
+                    default:
+                        }
+                        resposta = confirm('outro voto? ' );
+                    
+                    } while(resposta);
+
+                        document.write('contagem dos votos<br><br>');
+                        document.write('Bo: ' + c1 + '<br>' );
+                        document.write('lu: ' + c2 + '<br>' );
+                        document.write('ciro: ' + c3 + '<br>' );
+                        document.write('branco: ' + c4 + '<br>' );
+                        document.write('nulo: ' + c5 + '<br><br>' );
+
+                        if( (c1 > c2) && (c1 > c3) && (c1 > c4 + c5 )){
+                            document.write('Bo venceu !!!<br>');
+
+                        } else if ((c2 > c1) && (c2 > c3) && ( c2 > c4 + c5)){
+                            document.write('lu venceu !!! <br>');
+                        
+                        } else if( (c3 > c1) && (c3 > c2) && ( c3 > c4 + c5)){
+                            document.write('ciro venceu !!! <br>'); 
+                        
+                        } else{
+                            document.write('empate!<br>'); 
+                        }
+                    
+
+
+</script>

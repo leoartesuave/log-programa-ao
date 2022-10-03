@@ -1,0 +1,25 @@
+<script>
+    var num;
+    var maior = 0;
+    var menor = 0;
+
+    for (i = 0; i < 5; i++) {
+        num = Number(prompt('digite um numero'));
+    
+        if (i == 0) {
+            maior = num;
+            menor = num;
+        }
+
+        if (num > maior) {
+            maior = num;
+        }
+
+        if (num < menor) {
+            menor = num;
+        }
+
+    }
+    
+    alert('o maior eh: ' + maior + '\no menor eh: ' + menor);
+</script>
